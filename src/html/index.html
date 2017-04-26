@@ -4,16 +4,86 @@
 	<meta charset="UTF-8">
 	<meta name="themeColor" content="#444">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
-	<meta name="description" content="">
+	<title>Peaks Training</title>
+	<meta name="description" content="Online resource and tools for those passionate about ping-pong, including coaches and athletes">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
 
 	<link rel="stylesheet" charset="utf-8" href="/css/main.css">
 </head>
 <body>
+
+	<header>
+		Header Content
+	</header>
 	
 	<main>
-		
+		<section class="section-hero">
+			<div class="center-content">
+				<h1>Peaks</h1>
+				<h3>Ping Pong Training</h3>
+			</div>
+		</section>
+
+		<section class="section-cta">
+			<!-- Prompt for athlete vs coach -->
+			<h2>Are you a coach or an athlete?</h2>
+			<div class="button-row">
+				<button id="coach" class="main dark">Coach</button>
+				<button id="athlete" class="main dark">Athlete</button>
+			</div>
+		</section>
+
+		<section class="section-newsletter">
+			<h2>Sign up for our weekly newsletter</h2>
+			<form>
+				<label for="news-name">
+					<span class="real-label">Name</span>
+					<input type="text" name="news-name" id="news-name" placeholder="John Doe">
+				</label>
+				<label for="news-email">
+					<span class="real-label">Email</span>
+					<input type="email" name="news-email" id="news-email" placeholder="email@gmailcom">
+				</label>
+				<button type="button" class="main light">Sign Up</button>
+			</form>
+			<div class="news-success-container">
+				<h3 class="success-message-title">Thanks for signing up!</h3>
+				<p class="success-message">You should recieve a confirmation email shortly.</p>
+			</div>
+		</section>
+
+		<section class="section-contact">
+			<h2>Contact Us</h2>
+			<form id="contact-form" action="/contact-submit.php">
+				<label for="contact-name">
+					<span class="real-label">Name</span>
+					<input type="text" name="contact-name" id="contact-name" placeholder="Jane Doe">
+				</label>
+				<label for="contact-email">
+					<span class="real-label">Email</span>
+					<input type="email" name="contact-email" id="contact-email" placeholder="Jane Doe">
+				</label>
+				<label for="contact-message">
+					<span class="real-label">Message</span>
+					<textarea type="text" name="contact-message" id="contact-message" placeholder="Jane Doe">
+					</textarea>
+				</label>
+				<button type="submit" class="main dark">Submit</button>
+			</form>
+			<div class="contact-success-container">
+				<h3 class="success-message-title">We appreciate the message</h3>
+				<p class="success-message">We will get back to you soon.</p>
+			</div>
+		</section>
+
 	</main>
+
+	<footer>
+		Footer content
+	</footer>
+
 
 	<script src="/js/app.js"></script>
 </body>

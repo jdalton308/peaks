@@ -1,0 +1,15 @@
+TODO:
+- Colors
+- Fonts
+- hero
+- CTA for coach/athletes
+	- Show prompt for coach vs athelte
+	- Depending on answer, show distinct CTA
+- Newsletter signup that submits to Google Analytics
+	- Success message
+	- Validation and feedback
+- Contact form that submits to PHP class
+	- Success message
+	- Submit to a "PHP class"
+	- Show how this class cound interact with another class
+- Footer

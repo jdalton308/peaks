@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box; }
+
+:focus {
+  outline: none; }
+
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4a4a4a; }
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3em;
+  font-weight: 400;
+  margin: 0; }
+
+h1 {
+  font-size: 3rem;
+  font-family: "Pacifico", cursive; }
+
+h2 {
+  font-size: 2.3rem;
+  font-family: "Pacifico", cursive; }
+
+h3 {
+  font-size: 1.8rem; }
+
+h4 {
+  font-size: 1.3rem; }
+
+a {
+  color: #4a4a4a;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  a:visited {
+    color: #4a4a4a; }
+
+button {
+  display: inline-block;
+  border: none;
+  background: none;
+  border-radius: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer; }
+  button.main {
+    padding: 8px 16px;
+    font-size: 0.75em;
+    line-height: 1em;
+    text-transform: uppercase;
+    background-color: transparent; }
+    button.main:hover {
+      background-color: #FFF;
+      color: #4a4a4a; }
+  button.light {
+    color: #FFF;
+    border: 2px solid #FFF; }
+    button.light:hover {
+      background-color: #FFF;
+      color: #4a4a4a; }
+  button.dark {
+    color: #4a4a4a;
+    border: 2px solid #4a4a4a; }
+    button.dark:hover {
+      background-color: #4a4a4a;
+      color: #FFF; }
+
+main section {
+  position: relative;
+  padding: 36px 16px; }
+  main section > h2 {
+    text-align: center;
+    margin-bottom: 24px; }
+
+main .section-hero {
+  height: 100vh;
+  background-color: #AFC2D5; }
+  main .section-hero .center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    main .section-hero .center-content h1 {
+      margin-bottom: 8px;
+      color: #FFF; }
+    main .section-hero .center-content h3 {
+      color: #FFF; }
+
+main .section-cta {
+  background-color: #DFEFCA; }
+  main .section-cta .button-row button {
+    margin: 0 24px; }
+
+main .section-newsletter {
+  background-color: #B48B7D; }
+  main .section-newsletter .news-success-container {
+    display: none; }
+
+main .section-contact {
+  background-color: #FFF9A5; }
+  main .section-contact .contact-success-container {
+    display: none; }

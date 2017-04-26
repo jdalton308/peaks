@@ -5,14 +5,20 @@
 //// COLORS ////
 //-------------
 $black:		    #000;
+$dark-grey:   #4a4a4a;
 $grey:		    #666;
 $light-grey:	#aaa;
 $lighter-grey:  #ddd;
 $off-white: 	#FAFAFA;
 $white: 		#FFF;
 
-$main-bg: 		$grey;
-$text-color: 	$white;
+$blue:      #AFC2D5;
+$green-light:   #DFEFCA;
+$yellow:        #FFF9A5;
+$maroon:        #B48B7D;
+
+$main-bg: 		$off-white;
+$text-color: 	$dark-grey;
 $box-shadow: 	 4px 2px 20px -10px $black;
 $box-shadow-active: 	 4px 2px 20px -14px $black;
 
@@ -20,7 +26,8 @@ $box-shadow-active: 	 4px 2px 20px -14px $black;
 //// FONTS ////
 //-------------
 $base-font-size: 	20px;
-$sansFamily: 		Arial, sans-serif;
+$sans-family: 'Open Sans', Arial, sans-serif;
+$cursive-family: 'Pacifico', cursive;
 
 
 //// BREAKPOINTS ////
