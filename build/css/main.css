@@ -75,6 +75,36 @@ button {
       background-color: #4a4a4a;
       color: #FFF; }
 
+label {
+  display: block;
+  margin: 0 auto 12px;
+  text-align: left; }
+  label .real-label {
+    display: block;
+    margin-bottom: 2px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 0.6em; }
+  label input[type="text"],
+  label input[type="email"],
+  label textarea {
+    border: none;
+    border-radius: none;
+    background-color: #FFF;
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1em;
+    color: #4a4a4a; }
+
+form {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px; }
+  form button {
+    width: 100%;
+    margin-top: 24px; }
+
 header {
   position: fixed;
   top: -50px;
@@ -154,12 +184,39 @@ main .section-cta {
       main .section-cta .cta-prompt .cancel-cta:after {
         transform: rotate(-45deg); }
 
+main .section-newsletter #news-form-signup,
+main .section-newsletter #contact-form,
+main .section-contact #news-form-signup,
+main .section-contact #contact-form {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  main .section-newsletter #news-form-signup.hide,
+  main .section-newsletter #contact-form.hide,
+  main .section-contact #news-form-signup.hide,
+  main .section-contact #contact-form.hide {
+    opacity: 0; }
+
+main .section-newsletter .success-container,
+main .section-contact .success-container {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 150%;
+  width: 100%;
+  max-width: 500px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  main .section-newsletter .success-container.show,
+  main .section-contact .success-container.show {
+    top: 60%; }
+
 main .section-newsletter {
-  background-color: #B48B7D; }
-  main .section-newsletter .news-success-container {
-    display: none; }
+  background-color: #B48B7D;
+  color: #FFF; }
 
 main .section-contact {
   background-color: #FFF9A5; }
-  main .section-contact .contact-success-container {
-    display: none; }

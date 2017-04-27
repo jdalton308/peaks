@@ -14,6 +14,19 @@
 </head>
 <body>
 
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80327867-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
 	<header>
 		Header Content
 	</header>
@@ -60,44 +73,43 @@
 
 		<section class="section-newsletter">
 			<h2>Sign up for our weekly newsletter</h2>
-			<form>
+			<form id="news-form-signup">
 				<label for="news-name">
 					<span class="real-label">Name</span>
 					<input type="text" name="news-name" id="news-name" placeholder="John Doe">
 				</label>
 				<label for="news-email">
 					<span class="real-label">Email</span>
-					<input type="email" name="news-email" id="news-email" placeholder="email@gmailcom">
+					<input type="email" name="news-email" id="news-email" placeholder="john@gmailcom">
 				</label>
-				<button type="button" class="main light">Sign Up</button>
+				<button type="button" id="news-submit" class="main light">Sign Up</button>
 			</form>
-			<div class="news-success-container">
-				<h3 class="success-message-title">Thanks for signing up!</h3>
+			<div id="news-success" class="success-container">
+				<h2 class="success-message-title">Thanks for signing up!</h2>
 				<p class="success-message">You should recieve a confirmation email shortly.</p>
 			</div>
 		</section>
 
 		<section class="section-contact">
 			<h2>Contact Us</h2>
-			<form id="contact-form" action="/contact-submit.php">
+			<form id="contact-form" method="POST" action="/contact-submit.php">
 				<label for="contact-name">
 					<span class="real-label">Name</span>
 					<input type="text" name="contact-name" id="contact-name" placeholder="Jane Doe">
 				</label>
 				<label for="contact-email">
 					<span class="real-label">Email</span>
-					<input type="email" name="contact-email" id="contact-email" placeholder="Jane Doe">
+					<input type="email" name="contact-email" id="contact-email" placeholder="jane@gmail.com">
 				</label>
 				<label for="contact-message">
 					<span class="real-label">Message</span>
-					<textarea type="text" name="contact-message" id="contact-message" placeholder="Jane Doe">
-					</textarea>
+					<textarea type="text" name="contact-message" id="contact-message"></textarea>
 				</label>
-				<button type="submit" class="main dark">Submit</button>
+				<button type="submit" id="contact-submit" class="main dark">Submit</button>
 			</form>
-			<div class="contact-success-container">
-				<h3 class="success-message-title">We appreciate the message</h3>
-				<p class="success-message">We will get back to you soon.</p>
+			<div id="contact-success" class="success-container">
+				<h2 class="success-message-title">We appreciate your message</h2>
+				<p class="success-message">and will get back to you soon.</p>
 			</div>
 		</section>
 

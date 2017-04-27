@@ -96,14 +96,43 @@ button {
 
 // Forms
 //----------------------
+
 label {
+	display: block;
+	margin: 0 auto 12px;
+	text-align: left;
+
 	.real-label {
-
+		display: block;
+		margin-bottom: 2px;
+		font-family: $sans-family;
+		font-size: 0.6em;
+		// color: $light-grey;
 	}
-	input {
-
-	}
+	input[type="text"],
+	input[type="email"],
 	textarea {
+		// reset
+		border: none;
+		border-radius: none;
+		background-color: $white;
 
+		display: block;
+		width: 100%;
+		padding: 4px 8px;
+		font-family: $sans-family;
+		font-size: 1em;
+		color: $text-color;
+	}
+}
+
+form {
+	display: block;
+	margin: 0 auto;
+	max-width: 400px;
+
+	button {
+		width: 100%;
+		margin-top: 24px;
 	}
 }

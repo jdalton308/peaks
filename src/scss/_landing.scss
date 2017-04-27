@@ -101,26 +101,39 @@ main {
 		}
 	}
 
+	.section-newsletter,
+	.section-contact {
+
+		#news-form-signup,
+		#contact-form {
+			@include transition();
+
+			&.hide {
+				opacity: 0;
+			}
+		}
+
+		.success-container {
+			position: absolute;
+			@include centerMe();
+			top: 150%;
+			width: 100%;
+			max-width: 500px;
+			@include transition();
+
+			&.show {
+				top: 60%;
+			}
+		}
+	}
+
 	.section-newsletter {
 		background-color: $maroon;
-
-		form {
-
-		}
-		.news-success-container {
-			display: none;
-		}
+		color: $white;
 	}
 
 	.section-contact {
 		background-color: $yellow;
-
-		form {
-
-		}
-		.contact-success-container {
-			display: none;
-		}
 	}
 
 }
