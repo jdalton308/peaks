@@ -23,7 +23,7 @@ h4 {
   margin: 0; }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: "Pacifico", cursive; }
 
 h2 {
@@ -75,11 +75,18 @@ button {
       background-color: #4a4a4a;
       color: #FFF; }
 
+header {
+  position: fixed;
+  top: -50px;
+  padding: 16px 24px;
+  text-align: center; }
+
 main section {
   position: relative;
-  padding: 36px 16px; }
+  padding: 100px 16px;
+  text-align: center;
+  overflow: hidden; }
   main section > h2 {
-    text-align: center;
     margin-bottom: 24px; }
 
 main .section-hero {
@@ -91,17 +98,61 @@ main .section-hero {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    color: #FFF; }
     main .section-hero .center-content h1 {
-      margin-bottom: 8px;
-      color: #FFF; }
-    main .section-hero .center-content h3 {
-      color: #FFF; }
+      margin-bottom: 4px; }
 
 main .section-cta {
   background-color: #DFEFCA; }
   main .section-cta .button-row button {
     margin: 0 24px; }
+  main .section-cta .cta-prompt {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 60px 16px;
+    background-color: #DFEFCA;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    main .section-cta .cta-prompt.show {
+      opacity: 1; }
+    main .section-cta .cta-prompt#coach-prompt {
+      right: 100%; }
+      main .section-cta .cta-prompt#coach-prompt.show {
+        right: 0; }
+    main .section-cta .cta-prompt#athlete-prompt {
+      left: 100%; }
+      main .section-cta .cta-prompt#athlete-prompt.show {
+        left: 0; }
+    main .section-cta .cta-prompt h2 {
+      margin-bottom: 32px; }
+    main .section-cta .cta-prompt ul {
+      text-align: left;
+      margin: 0 auto 32px;
+      max-width: 600px; }
+    main .section-cta .cta-prompt .cancel-cta {
+      position: absolute;
+      top: 16px;
+      right: 32px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer; }
+      main .section-cta .cta-prompt .cancel-cta:before, main .section-cta .cta-prompt .cancel-cta:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 48%;
+        left: 20%;
+        width: 30px;
+        height: 2px;
+        background-color: #4a4a4a; }
+      main .section-cta .cta-prompt .cancel-cta:before {
+        transform: rotate(45deg); }
+      main .section-cta .cta-prompt .cancel-cta:after {
+        transform: rotate(-45deg); }
 
 main .section-newsletter {
   background-color: #B48B7D; }
