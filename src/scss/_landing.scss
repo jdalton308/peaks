@@ -23,6 +23,18 @@ main {
 				margin-bottom: 4px;
 			}
 		}
+
+		.pong-ball {
+			position: absolute;
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background-color: $off-white;
+			box-shadow: $box-shadow;
+			// @include animation(pong-ball, 10s, cubic-bezier(.17,.65,.79,.42), 0s, infinite);
+			@include animation(pong-ball, 10s, linear, 0s, infinite);
+		}
 	}
 
 	.section-cta {

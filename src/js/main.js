@@ -23,15 +23,18 @@ var $contactErrorMsg = $contactError.find('.error-message');
 
 // Coach vs Athlete CTA
 //----------------------------
-// TODO: Hiding/showing animations
-$ctaBtn.click(function(e){
-	var targetId = $(this).attr('id');
-	$('#'+ targetId +'-prompt').addClass('show');
-});
+(function(){
 
-$ctaCancel.click(function(e){
-	$(this).parent('.cta-prompt').removeClass('show');
-});
+	$ctaBtn.click(function(e){
+		var targetId = $(this).attr('id');
+		$('#'+ targetId +'-prompt').addClass('show');
+	});
+
+	$ctaCancel.click(function(e){
+		$(this).parent('.cta-prompt').removeClass('show');
+	});
+
+})();
 
 
 
