@@ -28,6 +28,10 @@ main {
 	.section-cta {
 		background-color: $green-light;
 
+		p {
+			margin-bottom: 40px;
+		}
+
 		.button-row {
 			button {
 				margin: 0 24px;
@@ -134,6 +138,21 @@ main {
 
 	.section-contact {
 		background-color: $yellow;
+
+		.error-container {
+			@include centerMe();
+			top: 150%;
+			@include transition();
+
+			&.show {
+				top: 90%;
+			}
+
+			.error-message {
+				text-align: center;
+				color: $maroon;
+			}
+		}
 	}
 
 }

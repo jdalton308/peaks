@@ -58,4 +58,5 @@ gulp.task('watch', function(){
 
 gulp.task('build', ['styles', 'scripts', 'html']);
 
-gulp.task('default', ['build', 'watch', 'server']);
+// gulp.task('default', ['build', 'watch', 'server']);
+gulp.task('default', ['build', 'watch']);
